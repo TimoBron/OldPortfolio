@@ -190,8 +190,10 @@ input, select, textarea {
 	}
 
 	.features {
-		margin-bottom: 0;
-		padding-top: 2em;
+		border-top: 2px;
+   	 	border-top-color: rgba(155,155,155,0.50);
+   	 	border-top-style: solid;
+		padding: 0px;
 	}
 
 	.feature {
@@ -1159,7 +1161,7 @@ input, select, textarea {
 				}
 
 					.row.gtr-0 > * {
-						padding: 0px 0 0 0px;
+						padding: 0 0 0 0;
 					}
 
 					.row.gtr-0.gtr-uniform {
@@ -2095,9 +2097,13 @@ input, select, textarea {
 		}
 
 	#header-wrapper {
-    position: relative;
-    background-color: rgba(61,61,61,1.00);
-    height: 90px;
+    position: absolute;
+	display: inline;
+    background-color: rgba(0,0,0,0.40);
+    height: 2.5em;
+	width: 100%;
+	left: 0;
+	z-index: 30;
 	}
 
 	.homepage #header-wrapper {
@@ -2135,8 +2141,8 @@ input, select, textarea {
 		#logo a {
 			display: block;
 			width: 100%;
-			height: 4em;
-			line-height: 4em;
+			height: 2.5em;
+			line-height: 2.5em;
 			background: rgba(255, 255, 255, 0.15);
 			border: solid 1px;
 			border-color: #fff;
@@ -2157,8 +2163,8 @@ input, select, textarea {
 		display: table;
 		left: 0;
 		top: 0;
-		height: 4em;
-		line-height: 4em;
+		height: 2.5em;
+		line-height: 2.5em;
 		width: 40%;
 		text-shadow: 3px 3px 2px rgba(0,0,0,1.00);
 	}
@@ -2185,8 +2191,8 @@ input, select, textarea {
 		display: table;
 		right: 0;
 		top: 0;
-		height: 4em;
-		line-height: 4em;
+		height: 2.5em;
+		line-height: 2.5em;
 		width: 40%;
 		text-shadow: 3px 3px 2px rgba(0,0,0,1.00);
 	}
@@ -3189,9 +3195,22 @@ input, select, textarea {
 }
 
 .gametitle {
-	position: relative;
 	text-align: center;
-	background-color: #000000;
+	width: 100%;
+	background-image: url("../../images/chaddius-banner-thin.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: local;
+	max-width: 1920px;
+	height: 100%;
+}
+
+.bannerwrapper::before {
+	content: "";
+	padding-top: 21%;
+	vertical-align: top;
+	display: inline-block;
 }
 
 .gameheader {
@@ -3204,11 +3223,15 @@ input, select, textarea {
 }
 
 .bannerwrapper {
-	width: 100%;
-	height: 400px;
 	background-image: url("../../images/chaddius-banner-thin.png");
-	background-position: center;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: local;
+	width: 100%;
+	max-width: 1920px;
+	height: 100%;
+	z-index: 10;
 }
 
 #gameplay {
@@ -3221,4 +3244,16 @@ input, select, textarea {
 #gameplayvideo {
 	width: 840px;
 	height: 100%;
+}
+
+.firstitem {
+	margin-left: 16.5%;
+}
+
+.pagebreak {
+	height: 5em;
+}
+
+#details {
+	text-align: center;
 }
