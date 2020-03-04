@@ -2516,7 +2516,7 @@ input, select, textarea {
 		/* Header */
 
 			#nav_left, #nav_right {
-				position: relative;
+				position: absolute;
 				margin: 0.5em 0 0 0;
 				line-height: 2.25em;
 				height: 2.25em;
@@ -3199,7 +3199,7 @@ input, select, textarea {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-attachment: local;
-	max-width: 1920px;
+	background-color:#3A3A3A;
 	height: 100%;
 }
 
@@ -3220,11 +3220,6 @@ input, select, textarea {
 }
 
 .bannerwrapper {
-	background-image: url("../../images/leng-banner-thin.png");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-attachment: local;
 	width: 100%;
 	max-width: 1920px;
 	height: 100%;
